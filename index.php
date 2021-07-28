@@ -11,7 +11,7 @@
   <body>
     <main>
       <div class="form-container">
-        <h2>Información de estudiante</h2>
+        <h1><?php echo "Actividad Evaluada 01"?></h1>
         <div class="division"></div>
         <form action="results.php" method="POST">
           <div class="form-control">
@@ -79,30 +79,33 @@
           <div class="form-control">
             <label for="grade1">Nota 1</label>
             <input
-              type="text"
               name="grade1"
-              placeholder="Ingresa la nota 1"
-              id=""
+              type="number"
+              min="0"
+              max="10"
+              step=".10"
               required
             />
           </div>
           <div class="form-control">
             <label for="mail">Nota 2</label>
             <input
-              type="text"
               name="grade2"
-              placeholder="Ingresa la nota 2"
-              id=""
+              type="number"
+              min="0"
+              max="10"
+              step=".10"
               required
             />
           </div>
           <div class="form-control">
             <label for="mail">Nota 3</label>
             <input
-              type="text"
               name="grade3"
-              placeholder="Ingresa la nota 3"
-              id=""
+              type="number"
+              min="0"
+              max="10"
+              step=".10"
               required
             />
           </div>
@@ -111,6 +114,17 @@
           </div>
         </form>
       </div>
+
+      <div class="form-footer">
+          <?php
+            echo "<h3>Julio Eduardo Canizalez Salinas</h3>"; 
+            echo "<p>Desarrollo Web con Software Libre con echo</p>"; 
+            print "<p>Desarrollo Web con Software Libre con print</p>";
+            
+            $nombreMateria = "Desarrollo Web con Software Libre";
+            printf("<p>%s con printf</p>", $nombreMateria);
+          ?>
+        </div>
     </main>
   </body>
 </html>
