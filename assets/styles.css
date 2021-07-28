@@ -40,7 +40,7 @@ main {
   margin: 0 auto;
 }
 
-.form-container h2 {
+.form-container h1 {
   text-align: center;
   font-weight: 600;
   font-size: 1.9rem;
@@ -66,7 +66,7 @@ form {
 
 .form-control input {
   border: none;
-  border-bottom: 1px solid #e2e2e2;
+  border-bottom: 1px solid #808080;
   height: 1.9rem;
   margin-top: 0.3rem;
   padding: 0.2rem 0.4rem;
@@ -100,7 +100,7 @@ form {
 textarea {
   padding: 1rem;
   margin-top: 0.4rem;
-  border: 1px solid #e2e2e2;
+  border: 1px solid #808080;
   border-radius: 0.2rem;
   outline: none;
   resize: none;
@@ -128,4 +128,65 @@ textarea {
 .form-control button:hover {
   background-color: #493bc4;
   cursor: pointer;
+}
+
+.form-footer {
+  text-align: center;
+  margin-top: 2rem;
+  background-color: #fff;
+  padding: 1rem 1.5rem 1.9rem 1.5rem;
+  width: 50%;
+  border-radius: 0.8rem;
+  margin: 2rem 0;
+  box-shadow: -2px 2px 53px 3px rgba(0, 0, 0, 0.29);
+}
+
+.form-footer h3 {
+  margin-top: 1rem;
+}
+
+/* Results styles */
+.results-container {
+  background-color: #fff;
+  padding: 1rem 1.5rem 1.9rem 1.5rem;
+  width: 70%;
+  height: 500px;
+  border-radius: 0.8rem;
+  margin: 2rem 0;
+  box-shadow: -2px 2px 53px 3px rgba(0, 0, 0, 0.29);
+  display: grid;
+  align-content: center;
+}
+
+.results-container h1 {
+  text-align: center;
+  margin: 0.5rem 0 1rem 0;
+  font-size: 2.5rem;
+}
+
+.results-container__data {
+  display: grid;
+  gap: 0.8rem;
+  grid-template-columns: repeat(2, 1fr);
+  margin-top: 1rem;
+  text-align: center;
+}
+
+.card {
+  height: auto;
+  width: 90%;
+  background-image: linear-gradient(to top, #e6e9f0 0%, #eef1f5 100%);
+  padding: 1.9rem 1rem;
+  justify-self: center;
+  border-radius: 0.4rem;
+}
+
+.number {
+  font-size: 2rem;
+  font-weight: 300;
+}
+
+.text {
+  font-size: 1.3rem;
+  font-weight: 300;
 }
